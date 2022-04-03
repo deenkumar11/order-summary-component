@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --clr-Pale-blue: hsl(225, 100%, 94%);
+    --clr-Bright-blue: hsl(245, 75%, 52%);
+    --clr-Very-pale-blue: hsl(225, 100%, 98%);
+    --clr-Desaturated-blue: hsl(224, 23%, 55%);
+    --clr-Dark-blue: hsl(223, 47%, 23%);
+}
+body{
+    font-family:'Red hat display','sans serif';
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-color: var(--clr-Very-pale-blue);
+    background-repeat: no-repeat;
+    display: grid;
+    background-size: contain;
+    min-height: 100vh;
+    place-items: center;
+}
+.card{
+    background-color: #fff;
+    max-width: 24rem;
+    overflow: hidden;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    border-radius: 1rem;
+    box-shadow:0 10px 25px 0 hsl(245, 75%, 52%,0.11);
+}
+.card image{
+    width: 100;
+    height: auto;
+    display: block;
+}
+.title{
+    color: var(--clr-Dark-blue);
+    padding: 1rem;
+    text-align: center;
+    font-weight: 900;
+}
+.description{
+    text-align: center;
+    color: var(--clr-Desaturated-blue);
+    padding: 1.3rem;
+    line-height: 2rem;
+}
+.cardholder{
+    display: flex;
+    background-color: var(--clr-Very-pale-blue);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 2rem 2rem 1.5rem;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+.buttons .button{
+    background-color: var(--clr-Bright-blue);
+}
